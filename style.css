@@ -1,0 +1,106 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: rgba(0,0,0,0.5) url("background/bg09.jpg");
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-blend-mode: multiply;
+    box-sizing: border-box;
+    position: relative;
+}
+a,h1,h2,p,span{
+    text-decoration: none;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0, .5);
+}
+.main{
+    height: 100vh;
+    box-sizing: border-box;
+    user-select: none;
+    flex-direction: column;
+/*     white-space: nowrap; */
+    position: relative;
+}
+.word{
+    position: absolute;
+    bottom: calc(50% - 1.5em);
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+.word span{
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    line-height: 40px;
+    height: 40px;
+    box-sizing: border-box;
+}
+.main .down{
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+.main .down a{
+    font-size: 40px;
+    margin: auto;
+    display: block;
+    animation: down 2s infinite;
+}
+
+.menu{
+    box-sizing: border-box;
+    height: 100vh;
+    padding: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.menu a .col{
+    height: 20%;
+    margin-bottom: 40px;
+    display: flex;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5),0 0 20px rgba(3, 232, 244, 0.7) inset;
+    align-items: center;
+    padding: 20px 30px;
+}
+
+.menu .col i{
+    font-size: 40px;
+    margin: 10px;
+}
+.menu .col h2{
+    font-size: 20px;
+}
+
+.footer{
+    text-align: center;
+    font-size: 1em;
+}
+
+@keyframes down {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-30px);
+        color: rgba(189, 189, 189, 0.5);
+    }
+}
+
+@media screen and (max-width:400px){
+    .word span{
+        font-size: 25px;
+        letter-spacing: 2px;
+        line-height: 30px;
+        height: 30px;
+    }
+}
