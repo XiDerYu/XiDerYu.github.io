@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../page.css">
+    <title>&lt;form&gt;表單</title>
+    <!-- 圖標 -->
+    <script src="https://kit.fontawesome.com/e0d2ad9624.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="../../icon.png">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="../../index.html">logo</a>
+        </div>
+        
+        <ul>
+            <li><a href="../index.html"><i class="fa-brands fa-html5"></i>html教學</a></li>
+            <li><a href="../../editer.html"><i class="fa-solid fa-code"></i>編輯器</a></li>
+            <li><a href="../../information.html"><i class="fa-solid fa-circle-info"></i></i>實用資訊</a></li>
+        </ul>
+    </header>
+
+    <div class="main">
+        <div class="title"><h1>&lt;form&gt;表單</h1></div>
+        
+        <div class="container">
+
+            <div class="aside">
+                <div class="content">
+                    <h2><i class="fa-solid fa-bars-staggered"></i>目錄</h2>
+                    <ul>
+                        <li><a href="#p1">&lt;form&gt;表單</a></li>
+                        <li><a href="#p2">&lt;form&gt;的重要屬性</a></li>
+                    </ul>
+                </div>
+                <div class="menu">
+                    <h2><i class="fa-brands fa-html5"></i>HTML教學</h2>
+                    <ul>
+                        <li><a href="../index.html">HTML簡介</a></li>
+                        <li><a href="../struct.html">HTML結構</a></li>
+                        <li><a href="../basic.html">HTML基本元素</a></li>
+                        <li><a href="../comment.html">註解</a></li>
+                        <li><a href="../head.html">head內容</a></li>
+                        <li><a href="h1-h6.html">&lt;h1&gt;~&lt;h6&gt;標題</a></li>
+                        <li><a href="p.html">&lt;p&gt;段落</a></li>
+                        <li><a href="a.html">&lt;a&gt;連結</a></li>
+                        <li><a href="div,span.html">區塊元素</a></li>
+                        <li><a href="list.html">清單</a></li>
+                        <li><a href="img.html">&lt;img&gt;圖片</a></li>
+                        <li><a href="table.html">&lt;table&gt;表格</a></li>
+                        <li><a href="q.html">引用</a></li>
+                        <li><a href="text.html">文字格式</a></li>
+                        <li><a href="code.html">程式元素</a></li>
+                        <li class="this"><a href="form.html">表單</a></li>
+                        <li><a href="input.html">&lt;input&gt;輸入</a></li>
+                        <li><a href="canvas.html">&lt;canvas&gt;繪圖畫布</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="artical">
+
+                <div class="col" id="p1">
+                    <p>HTML 表單是用來讓使用者輸入資料，這些資料可以用來和使用者互動，表單內容填完後可以傳回遠端伺服器，像常見的連絡表單。<br>
+&lt;form&gt;標籤中常見會包含 &lt;input&gt;、&lt;textarea&gt;、&lt;select&gt;、 &lt;option&gt;、&lt;button&gt;
+                    </p>
+                </div>
+
+                <div class="col" id="p2">
+                    <h2>&lt;form&gt;的重要屬性</h2>
+                    <p>
+                        <ul>
+                            <li>action: 用來指定一個位址(URL)，這個位址是告訴瀏覽器當使用者送出表單後，要將表格的內容送去哪邊。</li>
+                            <li>
+                                method: 用來指定資料傳輸時用的 HTTP 協議<br>
+                                表單數據可以作為 URL 變量（使用method="get"）或作為 HTTP 後事務（使用method="post"）發送。提交表單數據時的默認 HTTP 方法是 GET。 
+                            </li>
+                            <li>用來指定瀏覽器要在何處顯示表單送出後伺服器回應的結果。值有這些選項：
+                            <ul>
+                                <li>_self: 顯示在表單所在的當前視窗</li>
+                                <li>_blank: 顯示在新頁籤/視窗</li>
+                                <li>_parent: 顯示在上一層的視窗 (用在例如如果表單是放在&lt;iframe&gt;中)</li>
+                                <li>_top: 顯示在最頂層的視窗</li>
+                                <li>framename: 指定在哪個框架中開啟</li>
+                            </ul>
+                            <li>
+                              autocomplete: 指示這個表單中的欄位是否啟用瀏覽器自動完成機制。值有這些選項：
+                                <ul>
+                                    <li>on: 是，預設值</li>
+                                    <li>off: 否</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </p>
+                </div>
+                
+            </div>
+
+        </div>
+    </div>
+    <footer>
+        <p>Copyright 2022 by XiDerYu team. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>

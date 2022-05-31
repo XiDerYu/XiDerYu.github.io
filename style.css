@@ -19,12 +19,11 @@ a,h1,h2,p,span{
 .main{
     height: 100vh;
     box-sizing: border-box;
-    user-select: none;
     flex-direction: column;
-/*     white-space: nowrap; */
     position: relative;
 }
 .word{
+    font-family: sans-serif;
     position: absolute;
     bottom: calc(50% - 1.5em);
     left: 0;
@@ -33,22 +32,21 @@ a,h1,h2,p,span{
 }
 .word span{
     padding: 0;
-    font-family: sans-serif;
-    font-size: 1.5em;
+    font-size: 30px;
     letter-spacing: 2px;
     line-height: 40px;
     height: 40px;
     box-sizing: border-box;
 }
-.main .down{
+.down{
     position: absolute;
     bottom: 10px;
     left: 0;
     right: 0;
     text-align: center;
 }
-.main .down a{
-    font-size: 40px;
+.down a{
+    font-size: 50px;
     margin: auto;
     display: block;
     animation: down 2s infinite;
@@ -62,7 +60,7 @@ a,h1,h2,p,span{
     margin: 0 auto;
 }
 
-.menu a .col{
+.col{
     height: 20%;
     margin-bottom: 40px;
     display: flex;
@@ -71,14 +69,20 @@ a,h1,h2,p,span{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5),0 0 20px rgba(3, 232, 244, 0.7) inset;
     align-items: center;
     padding: 20px 30px;
+    transition: .3s;
 }
 
-.menu .col i{
+.col:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7),0 0 20px rgba(3, 232, 244, 0.7) inset,0 0 50px rgba(3, 232, 244, 0.7) inset;
+    transform: translateX(-20px);
+}
+
+.col i{
     font-size: 40px;
     margin: 10px;
 }
-.menu .col h2{
-    font-size: 20px;
+.col h2{
+    font-size: 25px;
 }
 
 .footer{
@@ -93,14 +97,5 @@ a,h1,h2,p,span{
     50%{
         transform: translateY(-30px);
         color: rgba(189, 189, 189, 0.5);
-    }
-}
-
-@media screen and (max-width:400px){
-    .word span{
-        font-size: 25px;
-        letter-spacing: 2px;
-        line-height: 30px;
-        height: 30px;
     }
 }
